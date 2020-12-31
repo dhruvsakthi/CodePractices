@@ -1,0 +1,8 @@
+vals = input("Give me the Principle, rate(0-100) and time(in years) sperated by a space:")
+p, r, t = vals.split(" ")
+r = float(r)
+p = float(p)
+t = float(t)
+r = (r * .01)
+intrest = (r * p * t)
+print("The interest is %d and the total number of dollars is %d" % (intrest, p + intrest))
